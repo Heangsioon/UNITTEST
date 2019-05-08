@@ -1,0 +1,9 @@
+https://www.cnblogs.com/fennudexiaoniao/p/7771931.html
+
+1. 写好TestCase：一个class继承unittest.TestCase，就是一个测试测试用例，其中有多个以test开头的方法，
+    那么 每一个这样的，在load的时候会生成一个TestCase实例。如果一个class中有四个test开头的方法，最后load到suite中时则有四个测试用例
+2. 由TestLoder加载TestCase到TestSuite
+3.然后由TextTestRunner来运行TestSuite，运行的结果保存在TextTestResult中。
+
+附加 unittest.defaultTestLoader.discover
+https://blog.csdn.net/happyuu/article/details/80683161
